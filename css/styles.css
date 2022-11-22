@@ -980,6 +980,8 @@ p {
   border-radius: 4px;
   padding-left: 42px;
   font: inherit;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-input {
@@ -993,11 +995,8 @@ p {
   left: 12px;
   right: 418px;
   fill: currentColor;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-/* .input-svg:focus-within {
-  color: var(--accent-color);
-} */
 
 .label-name {
   font-size: 12px;
@@ -1093,16 +1092,12 @@ p {
   height: 15px;
 }
 
-/* .icon-input:focus-within .modal-input {
-  appearence: none;
-} */
-
 .modal-input:focus {
   border: 1px solid var(--accent-color);
   border-radius: 4px;
   outline: none;
 }
 
-.input-svg + .modal-input:focus {
+.modal-input:focus + .input-svg {
   fill: var(--accent-color);
 }
