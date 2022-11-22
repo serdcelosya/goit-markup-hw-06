@@ -614,6 +614,7 @@ p {
 
 .maket {
   display: flex;
+  align-items: baseline;
 }
 
 .h-footer {
@@ -647,9 +648,9 @@ p {
   fill: currentColor;
 }
 
-.subscribe {
-  padding-left: 93px;
-}
+/* .subscribe {
+  margin-left: 93px;
+} */
 
 .form-thumb {
   padding-top: 12px;
@@ -662,6 +663,7 @@ p {
 }
 
 .text-label {
+  display: inline-block;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
@@ -684,12 +686,13 @@ p {
 }
 
 .form-label {
-  display: flex;
-  flex-direction: column;
+  width: 358px;
 }
 
 .form {
   display: flex;
+  align-items: flex-end;
+  margin-left: 93px;
 }
 
 .btn-submit {
@@ -709,16 +712,12 @@ p {
   cursor: pointer;
   text-align: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-left: 12px;
 }
 
 .btn-submit:focus,
 .btn-submit:hover {
   background-color: var(--btn-active);
-}
-
-.thumb-submit {
-  padding-top: 48px;
-  margin-left: 12px;
 }
 
 .icon-submit {
@@ -1038,7 +1037,7 @@ p {
 }
 
 .policy {
-  padding-left: 13px;
+  margin-left: 13px;
   display: flex;
   align-items: center;
 }
